@@ -1,16 +1,14 @@
 import Link from 'next/link';
+import { wrap } from '@/lib/styles';
 
 export default function Header() {
 	return (
-		<header className="site-header">
-			<Link className="site-header__logo" href="/">
-				JOBBPORTAL
-			</Link>
-			<nav className="site-header__nav">
-				<Link href="/jobs">JOBB</Link>
-				<Link href="/om-oss">OM OSS</Link>
-				<Link href="/kontakt">KONTAKT</Link>
-			</nav>
+		<header className="pt-6 pb-2">
+			<div className={wrap}>
+				<Link className="font-serif text-2xl text-text no-underline" href="/">
+					Jobbportal
+				</Link>
+			</div>
 		</header>
 	);
 }
