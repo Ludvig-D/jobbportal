@@ -19,9 +19,9 @@ En jobbportal byggd med [Next.js](https://nextjs.org/) (App Router) och [Storybl
 | `department-filter` (Nestable) | `label` |
 | `search-bar` (Nestable) | `placeholder` |
 
-Datasource `job-departments` (slug) innehåller minst tre avdelningar, t.ex. Utveckling/utveckling, Design/design, Marknadsföring/marknadsforing.
+Datasource `job-departments` (slug) innehåller avdelningarna Kök/kok, Servering/servering, Reception/reception och Housekeeping/housekeeping.
 
-Innehållsstruktur i Storyblok: en mapp `jobs/` med minst tre publicerade `job-post`-stories, samt en `jobs/index`-story (content type `page`, satt som root för mappen) vars `body` innehåller ett `toolbar`-block och ett `jobs-list`-block.
+Innehållsstruktur i Storyblok: en mapp `jobs/` med publicerade `job-post`-stories, samt en index-story (content type `page`, "Define as root for the folder") vars `body` innehåller ett `toolbar`-block och ett `jobs-list`-block. Eftersom index-storyn är mappens root hämtas den via `cdn/stories/jobs`.
 
 ## Komma igång lokalt
 

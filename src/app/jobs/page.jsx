@@ -10,7 +10,7 @@ async function getJobsIndexStory() {
 	const storyblokApi = getStoryblokApi();
 
 	try {
-		const { data } = await storyblokApi.get('cdn/stories/jobs/index', {
+		const { data } = await storyblokApi.get('cdn/stories/jobs', {
 			version: getStoryVersion(),
 		});
 		return data?.story ?? null;
