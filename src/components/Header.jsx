@@ -7,7 +7,6 @@ export default function Header() {
 				JOBBPORTAL
 			</Link>
 			<nav className="site-header__nav">
-				<Link href="/">HEM</Link>
 				<Link href="/jobs">JOBB</Link>
 				<Link href="/om-oss">OM OSS</Link>
 				<Link href="/kontakt">KONTAKT</Link>

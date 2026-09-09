@@ -7,6 +7,9 @@ const nextConfig = {
 		STORYBLOK_API_BASE_URL: process.env.STORYBLOK_API_BASE_URL,
 		STORYBLOK_REGION: process.env.STORYBLOK_REGION,
 	},
+	async redirects() {
+		return [{ source: '/', destination: '/jobs', permanent: false }];
+	},
 };
 
 export default nextConfig;
