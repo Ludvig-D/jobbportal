@@ -22,7 +22,7 @@ async function getJobsIndexStory() {
 export async function generateMetadata() {
 	return {
 		title: 'Jobb | Jobbportal',
-		description: 'Bläddra bland lediga jobb hos Jobbportal.',
+		description: 'Lediga jobb inom hotell och restaurang – kök, servering, reception och housekeeping.',
 	};
 }
 

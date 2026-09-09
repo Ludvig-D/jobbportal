@@ -7,13 +7,14 @@ En jobbportal byggd med [Next.js](https://nextjs.org/) (App Router) och [Storybl
 - `/jobs` — lista över alla lediga jobb, med toolbar för filtrering på avdelning och fritextsök
 - `/jobs/[slug]` — detaljsida för en jobbannons (titel, sammanfattning, plats, avdelning, RichText-innehåll)
 - Global header och footer
+- Knappen »Sök tjänsten« på detaljsidan länkar till `applyUrl` om fältet finns (URL eller e-postadress), annars till ett mejl till `NEXT_PUBLIC_APPLY_EMAIL` (standard `jobb@jobbportal.se`) med tjänstens titel som ämne
 - Filter (`?department=...`) och sök (`?q=...`) kan kombineras, drivs helt av `<form method="get">` utan klient-JS
 
 ## Storyblok-innehållsmodell
 
 | Content type | Fält |
 |---|---|
-| `job-post` | `title` (Text), `summary` (Textarea), `department` (Single Option → datasource `job-departments`), `location` (Text), `content` (RichText), `publishedAt` (Datetime) |
+| `job-post` | `title` (Text), `summary` (Textarea), `department` (Single Option → datasource `job-departments`), `location` (Text), `content` (RichText), `publishedAt` (Datetime), `applyUrl` (Link eller Text, valfritt) |
 | `jobs-list` (Nestable) | `heading`, `subheading`, `emptyMessage` |
 | `toolbar` (Nestable) | `items` (Blocks: `department-filter`, `search-bar`) |
 | `department-filter` (Nestable) | `label` |

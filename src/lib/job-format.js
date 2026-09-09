@@ -15,10 +15,8 @@ export function formatPublishedAt(value) {
 	if (Number.isNaN(date.getTime())) return value;
 
 	return date.toLocaleDateString('sv-SE', {
-		year: 'numeric',
-		month: 'long',
 		day: 'numeric',
-		hour: '2-digit',
-		minute: '2-digit',
+		month: 'long',
+		year: 'numeric',
 	});
 }
