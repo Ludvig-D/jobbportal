@@ -1,5 +1,7 @@
 # Jobbportal
 
+> Skolprojekt på **Nackademin – Webb25**.
+
 En jobbportal byggd med [Next.js](https://nextjs.org/) (App Router) och [Storyblok](https://www.storyblok.com/) som headless CMS. Examinationsuppgift — dynamisk CMS-sajt med jobbannonser, filter och sök.
 
 ## Funktioner
